@@ -1,0 +1,33 @@
+<div class="bootstrap-wrapper" >
+  <div class="container" style="background-color: cadetblue;height: 550px;width: 700px;" >
+    <div class="row" style="margin-top: 60px">
+      <div class="col-md-6 offset-md-3">
+        <div class="container text-center">
+            <img class="logo" src="../../../assets/img/damroobajao.png">
+        </div>
+        <h1 class="text-center">Login Here</h1>
+         <form (ngSubmit)="formSubmit()">
+           <div class="row">
+            <label>Username</label>
+            <div class="form-group">
+              <input class="form-control infut-field" type="text" name="email" placeholder="Enter Username" [(ngModel)]="model.email">
+            </div>
+           </div>
+           <br>
+           <div class="row">
+            <label>Password</label>
+            <div class="form-group">
+              <input class="form-control infut-field" type="password" name="password" placeholder="Enter Password" [(ngModel)]="model.password">
+            </div>
+           </div>
+           <br>
+           <div class="row">
+            <button style="float:none;" class=" btn btn-fill btn-primary btndanger" type="submit">Sign In</button>
+           </div>
+         </form>
+         <br>
+        <button type="button" class="btn btn-success">New User? SignUp</button>
+      </div>
+    </div>
+  </div>
+</div>
